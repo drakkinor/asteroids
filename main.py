@@ -53,7 +53,7 @@ def main():
             for shot in shots:
                 if shot.check_collision(roid):
                     shot.kill()
-                    roid.kill()
+                    roid.split()
 
         pygame.display.flip()
         dt = (clock.tick(60)/1000)
